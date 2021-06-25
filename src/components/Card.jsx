@@ -10,11 +10,12 @@ export default function Card() {
           src="../images/image-victor.jpg"
           alt="profile pic"
         />
+        <div className="profile__person">
+          Victor Crest <span className="profile__age"> 26</span>
+        </div>
+        <div className="profile__location">London</div>
       </div>
-      <div className="profile__person">
-        Victor Crest <span className="profile__age"> 26</span>
-      </div>
-      <div className="profile__location">London</div>
+
       <div className="stats">
         <Stats numbers="80K" category="Followers" />
         <Stats numbers="803K" category="Likes" />

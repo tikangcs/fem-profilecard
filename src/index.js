@@ -6,4 +6,4 @@ export default function App() {
   return <Card />;
 }
 
-ReactDOM.render(<App />, document.getElementById("root"));
+ReactDOM.render(<App className="App" />, document.getElementById("root"));

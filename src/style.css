@@ -22,8 +22,10 @@ html:focus-within {
   scroll-behavior: smooth;
 }
 
-body {
+body,
+.App {
   min-height: 100vh;
+  min-width: 100vw;
   text-rendering: optimizeSpeed;
   line-height: 1.5;
 }
@@ -55,6 +57,7 @@ select {
   align-items: center;
   width: 480px;
   height: 480px;
+  min-width: 350px;
 }
 .profile {
   background-image: url("./images/bg-pattern-card.svg");
@@ -64,10 +67,11 @@ select {
   display: flex;
   flex-grow: 1;
   flex-direction: column;
-  justify-content: center;
+  justify-content: flex-end;
   align-items: center;
   width: 100%;
   background-color: white;
+  gap: 4%;
 }
 .profile__pic {
   border: 5px solid white;
@@ -75,9 +79,8 @@ select {
   background-color: white;
 }
 
-.profile__person,
 .profile__location {
-  position: absolute;
+  margin-bottom: 7%;
 }
 .stats {
   display: flex;
@@ -109,13 +112,10 @@ select {
   font-weight: 400;
   color: hsl(227, 10%, 46%);
 }
-.profile__person {
-  bottom: 45%;
-}
+
 .profile__location {
   color: hsl(227, 10%, 46%);
   font-size: 1.2rem;
-  bottom: 42%;
 }
 
 .stats__category {
